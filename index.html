@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="instructContainer">
+      <h1>Welcome to My Coding Quiz</h1>
+
+      <h3>
+        <p>This is a timed quiz testing your Javascript knowledge.</p>
+        <p id="warning">Careful, Incorrect Answers will cost you precious seconds...</p>
+        <p>The final score is your remaining time. Good luck!</p>
+      </h3>
+    </div>
+ <div class="quizContainer"></div>
+    <div class="timer"><span id="time"></span></div>
+   
+      <div id="start-screen" class="start">
+        <h2>Coding Quiz</h2>
+        <button id="start">Start Quiz</button>
+      </div>
+
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h2>Quiz Completed</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials:
+          <input
+            type="text"
+            id="initials"
+            maxlength="3"
+            style="text-transform: uppercase"
+          />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="results" class="results hide"></div>
+    </div>
+    <br />
+    <div class="scoreContainer">
+      <h2>Highscores</h2>
+      <ol id="highscores"></ol>
+      <button id="clear">Clear</button>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
