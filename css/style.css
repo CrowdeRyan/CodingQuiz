@@ -1,0 +1,102 @@
+body {
+  font-family: Arial;
+  font-size: 120%;
+  background: linear-gradient(to right, rgb(95, 155, 100), rgb(5, 65, 5) 70%);
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+p {
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(207, 207, 207);
+}
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+button {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 100%;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  border: 0;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.choices button {
+  display: block;
+}
+
+input[type="text"] {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 300%;
+  text-align: center;
+  text-decoration-line: underline;
+  color: gold;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+.quizContainer,
+.scoreContainer,
+.instructContainer {
+  width: auto;
+  height: auto;
+  margin: 5%;
+  color: white;
+  text-align: center;
+}
+
+h3 #warning {
+  line-height: 30px;
+}
+
+#questions,
+#end-screen {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+  color: white;
+}
+
+.scores {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.timer {
+  font-size: 400%;
+  position: relative;
+  text-align: center;
+}
