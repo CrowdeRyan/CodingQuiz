@@ -85,6 +85,25 @@ function endQuiz() {
   questionsEl.setAttribute("class", "hide");
 }
 
+function saveClicks() {
+  var characterPick = initialsEl.value.trim();
+
+  if (initials !== "") {
+    var highscores =
+      JSON.parse(window.localStorage.getItem("highscores")) || [];
+    var newScore = {
+      score: time,
+      initials: initials,
+    };
+
+    // store and puts into string
+    highscores.push(newScore);
+    window.localStorage.setItem("highscores", JSON.stringify(highscores));
+  }
+
+  window.location.reload(true);
+}
+
 // function in order to save scores to the browser's local storage
 function saveScores() {
   var initials = initialsEl.value.trim();

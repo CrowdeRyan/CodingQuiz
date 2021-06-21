@@ -1,5 +1,7 @@
 # 04 Java script.JSON: Coding Quiz (Explanation ReadMe)
 
+This is a quiz to test your coding knowledge against a ticking clock. Scores are saved and displayed.
+
 Link to Website: https://crowderyan.github.io/CodingQuiz/
 
 1.  The Quiz taking process:
@@ -30,3 +32,7 @@ Link to Website: https://crowderyan.github.io/CodingQuiz/
 ![browser local storage](./images/readme/storage.png)
 
 ![local storage code](./images/readme/storage1.png)
+
+This project uses: DOM elements, local storage, and JSON.
+
+If you have any questions:<a href="mailto:rebuiltrival@gmail.com" hspace="20">Email Me</a>
